@@ -2,7 +2,7 @@ unaligned: "RAWDATA" # The hifi.bam file obtainied from the sequencer
 analysis: "ANALYSIS" # folder where the git repo is cloned and analysis is performed
 reference: "reference"
 sample: "samplename"
-MAS_SMRTbell_adapters_barcodes: "resources/mas16_primers.fasta"
+Iso-Seq_cDNA_Primer: "resources/Iso-Seq_cDNA_Primers.fasta"
 ref : "reference fasta file"
 gtf: "annotation file (gtf)"
 polya: "resources/mouse_and_human.polyA_motif.txt"
