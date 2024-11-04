@@ -17,4 +17,4 @@ rule refine:
     threads: 16
     resources: mem_mb=config['medium']['mem'], runtime=config['medium']['runtime'] #, partition=config['medium']['partition']
     log: "results/logs/" + sample + ".refine.log"
-    shell: "isoseq3 refine --require-polya {input} {primers} {output} -j {threads} 2>{log}"
+    shell: "isoseq refine --require-polya {input} {primers} {output} -j {threads} 2>{log}"
