@@ -32,7 +32,7 @@ For installation details, see the [instructions in the Snakemake documentation](
 
 Activate the conda environment:
 
-    conda activate snakemake
+    conda activate $NAME
 
 Test your configuration by performing a dry-run via
 
