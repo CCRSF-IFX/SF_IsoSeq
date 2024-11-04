@@ -21,7 +21,7 @@ include: "rules/flncalign.smk"
 rule all:
     input: 
         "results/" + sample + ".flnc.bam",
-        "results/" + sample + ".collapsed.sorted.gf",
+        "results/" + sample + ".collapsed.sorted.gff",
         "results/" + sample + ".flnc.mapped.bam",
         "results/" + sample + ".flnc.fastq",
         "results/" + sample + ".mapped.bam",

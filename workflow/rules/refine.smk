@@ -1,6 +1,6 @@
 
 rule lima:
-    input: "results/" + sample + ".hifi.bam"
+    input: rawdir + "/" + sample + ".hifi.bam"
     output: "results/" + sample + ".IsoSeq_5p--IsoSeq_3p.bam", "results/" + sample + ".lima.clips"
     params: prefix = "results/" + sample + ".bam"
     conda: "envs/lima.yaml"

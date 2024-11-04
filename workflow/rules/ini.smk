@@ -17,6 +17,8 @@ configfile: "config/config.yaml"
 analysisdir = config['analysis']
 rawdir = config['unaligned']
 sample = config['sample']
+primers = config['Iso-Seq_cDNA_Primer']
+
 #sample =  [os.path.basename(file).split('.')[0] for file in glob.glob(rawdir + '/*')][0]
 
 

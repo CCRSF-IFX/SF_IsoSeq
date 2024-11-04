@@ -1,7 +1,7 @@
 
 rule classify:
     input: flnc = "results/" + sample + ".collapsed.flnc_count.txt", gff = "results/" + sample + ".collapsed.sorted.gff"
-    output: gff = "results/" + sample + ".sqanti_classification.txt" , jnc = "results/" + sample + "_junctions.txt", summary = "results/" + sample + ".sqanti.summary.txt", json = "results/" + sample + ".sqanti.report.json
+    output: gff = "results/" + sample + ".sqanti_classification.txt" , jnc = "results/" + sample + "_junctions.txt", summary = "results/" + sample + ".sqanti.summary.txt", json = "results/" + sample + ".sqanti.report.json"
     params: ref = config['ref'], gtf = config['gtf'], polya = config['polya'], cagepeak = config['cagepeak'], prefix = sample
     conda: "envs/pigeon.yaml" 
     threads: 16
