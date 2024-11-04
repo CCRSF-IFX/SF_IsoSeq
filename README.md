@@ -1,4 +1,4 @@
-# Snakemake workflow: SF_IsoSeq
+# SF_IsoSeq
 
 [![Snakemake](https://img.shields.io/badge/snakemake-≥8-brightgreen.svg)](https://snakemake.bitbucket.io)
 [![Build Status](https://travis-ci.org/snakemake-workflows/SF_IsoSeq.svg?branch=master)](https://travis-ci.org/snakemake-workflows/SF_IsoSeq)
