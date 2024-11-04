@@ -6,7 +6,7 @@ Iso-Seq_cDNA_Primer: "resources/Iso-Seq_cDNA_Primers.fasta"
 ref : "reference fasta file"
 gtf: "annotation file (gtf)"
 polya: "resources/mouse_and_human.polyA_motif.txt"
-cagepeak: "resources/human.refTSS_v3.1.hg38.10X.chr.bed" # for human
+cagepeak: "resources/refTSS_v3.3_human_coordinate.hg38.sorted.bed"
 
 
 #Cluster assign
