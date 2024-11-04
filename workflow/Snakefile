@@ -1,0 +1,29 @@
+# The main entry point of your workflow.
+# After configuring, running snakemake -n in a clone of this repository should successfully execute a dry-run of the workflow.
+
+
+#report: "report/workflow.rst"
+
+# Allow users to fix the underlying OS via singularity.
+#singularity: "docker://continuumio/miniconda3"
+
+
+# Subsequent target rules can be specified below. They should start with all_*.
+
+
+
+include: "rules/ini.smk"
+include: "rules/refine.smk"
+include: "rules/align.smk"
+include: "rules/classify.smk"
+include: "rules/flncalign.smk"
+
+rule all:
+    input: 
+        "results/" + sample + ".flnc.bam",
+        "results/" + sample + ".collapsed.sorted.gf",
+        "results/" + sample + ".flnc.mapped.bam",
+        "results/" + sample + ".flnc.fastq",
+        "results/" + sample + ".mapped.bam",
+        "results/" + sample + ".sqanti_classification.txt",
+        "results/" + sample + ".sqanti_classification.filtered_lite_classification.txt",
